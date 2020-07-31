@@ -1,0 +1,58 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+  #head{text-align:center;}
+  #form{text-align:center;}
+</style>
+<main id="main">
+  <div id="head">
+  <h1 id="title">freeCodeCamp Survey Form
+  </h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform.</i>
+    </p>
+    </div>
+  <div id="form">
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label><br>
+      <input id="name" type="text" placeholder="Enter your name" required=""><br><br>
+      <label id="email-label" for="email">Email</label><br>
+      <input id="email" type="email" placeholder="Enter your email" required=""><br><br>
+      <label id="number-label" for="number">Age</label><br>
+      <input id="number" type="number" placeholder="Enter your age" required="" min="10" max="99"><br><br>
+      <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label><br>
+      <select id="dropdown" name="role" required="">
+        <option disabled="" selected="" value="">Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full time job</option>
+        <option value="learner">Full time learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select><br><br>
+      <label id="radio-label" for="radio">Would you recommend freeCodeCamp to a friend?
+      <div id="radio">
+        <label>
+        <input id="definitely-radio" name="user-recommend" value="definitely" type="radio" checked=""> Definitely </label><br>
+        <label>
+        <input id="maybe-radio" name="user-recommend" value="maybe" type="radio">Maybe </label><br>
+        <label>
+        <input id="no-radio" name="user-recommend" value="no" type="radio">No </label><br><br>
+      </div>
+        <label id="check-label" for="checkbox">What would you like to see improved? (Check all that apply)</label>
+        <div id="checkbox">
+          <label><input name="prefer" value="front-end-projects"type="checkbox">Front-end Projects</label><br>
+          <label><input name="prefer" value="back-end-projects"type="checkbox">Back-end Projects</label><br>
+          <label><input name="prefer" value="data-visualization"type="checkbox">Data Visualization</label><br>
+          <label><input name="prefer" value="challenges"type="checkbox">Challenges</label><br>
+          <label><input name="prefer" value="open-source-community"type="checkbox">Open Source Community</label><br>
+          <label><input name="prefer" value="glitter-help-rooms"type="checkbox">Glitter help rooms</label><br>
+          <label><input name="prefer" value="videos"type="checkbox">Videos</label><br>
+          <label><input name="prefer" value="city-meetups"type="checkbox">City Meetups</label><br>
+          <label><input name="prefer" value="wiki"type="checkbox">Wiki</label><br>
+          <label><input name="prefer" value="forum"type="checkbox">Forum</label><br>
+          <label><input name="prefer" value="additional-courses"type="checkbox">Additional courses</label><br><br>
+        </div>
+        <label id="comment-label" for="comment">Any comments or suggestions?</label><br>
+        <textarea id="comment"placeholder="Enter your comment here..."></textarea><br><br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</main>
