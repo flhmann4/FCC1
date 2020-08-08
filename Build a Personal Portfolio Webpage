@@ -1,0 +1,26 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<style>
+  .nav{position: fixed;
+    top:0;
+    padding:0px 0px 0px 0px;
+    display: flex;
+    background-color: white;}
+    #welcome-section{display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100vh;
+background-color: white;
+  }
+  @media (max-height:800px){p{font-size:10px;}}
+
+</style>
+
+<main>
+  <br>
+  <nav id="navbar" class="nav"><p>Look at my <a href="#projects"> projects!</a> Look at my <a id="profile-link" href="https://github.com/flhmann4" target="_blank">github!</a></p></nav>
+  <section id="welcome-section"><h1>Welcome!</h1></section>
+  <section id="projects"><div class="project-tile"> <p>Link to project <a href="https://codepen.io/flhmann4/pen/QWyeLQQ">here!</a> This and all other projects are still a work in progress.</p></div></section>
+</main>
