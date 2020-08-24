@@ -1,23 +1,34 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<!-- https://codepen.io/flhmann4/pen/QWyeLQQ -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 <style>
-  #title{text-align:center;}
-  #subtitle{text-align:center;}
-  #img-div{text-align:center;margin-top:-50px;}
-  #tribute-info {text-align:center;padding-top:30px;margin:auto;}
-  #timelist{text-align:left; margin-left:650px; margin-right:650px;line-height:150%;}
+  #body{margin:0; font-family: 'Montserrat', sans-serif; background-color:lightgrey; text-align:center;}
+  #beginning-container{display:flex; flex-direction:column; justify-content: space-evenly; align-items:center;}
+  #title{text-align: center; }
+  #subtitle{display:flex; text-align: center; padding:10px 10px 10px 10px; }
+  #img-div{display:center;  background-color:white; margin: 10px 10% 10px 10%; padding: 20px 200px 20px 200px;}
+    #image{max-width:100%; height:auto; display: block; margin:0 auto;}
+  #img-caption{margin: 15px 0 5px 0; padding: 20px 20px 20px 20px;}
+  #tribute-info {text-align: center; padding-top: 30px; margin: auto; }
+  #timelist{text-align: left; margin: 0 650px 0 650px; line-height: 150%;
+margin-bottom: 5em;}
   .quote{text-align:left; margin-left:650px; margin-right:650px;line-height:150%;}
-  #image{display:block;max-width:100%; height:auto; margin:auto;}
+  #tribute-link-section{ margin-top: 5em;}
 </style>
+
+
+<body id="body">
 <main id="main">
-  <h1 id="title">Dr. Norman Borlaug</h1>
-  <p id="subtitle">The man who saved a billion lives.</p>
+  <div id="beginning-container">
+    <h1 id="title">Dr. Norman Borlaug</h1>
+    <p id="subtitle">The man who saved a billion lives.</p>
+  </div>
   <div id="img-div">
-    <img src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg" alt="Dr. Norman Borlaug with biologists in a Mexican wheat field" id="image"><figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
+       <img src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg" alt="Dr.    Norman Borlaug with biologists in a Mexican wheat field" id="image">
+        <figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
   </div>
   <section id="tribute-info">
     <h2 id="timetitle" font-size:10px;>
-      Here's a time line of Dr.Borlaug's life:
+      Here's a timeline of Dr.Borlaug's life:
     </h2>
     <ul id=timelist><li>1914 - Born in Cresco, Iowa</li>
       <li>1933 - Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration" </li>
@@ -37,6 +48,9 @@
       <li>2009 - dies at the age of 95.</li>
     </ul>
     <p class="quote"><i>"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect, persistence and scientific vision can make to human peace and progress."</i> </p><p class="quote"><i>-- Indian Prime Minister Manomohan Singh</i></p>
-    <h3>If you have time, you should read more about this incredible human being on his <a id="tribute-link"href="https://en.wikipedia.org/wiki/Norman_Borlaug"target="_blank">Wikipedia page</a>.</h3>
+    <section id="tribute-link-section">
+    <h3 id="quote-end">If you have time, you should read more about this incredible human being on his <a id="tribute-link"href="https://en.wikipedia.org/wiki/Norman_Borlaug"target="_blank">Wikipedia page</a>.</h3>
+    </section>
   </section>
 </main>
+</body>
